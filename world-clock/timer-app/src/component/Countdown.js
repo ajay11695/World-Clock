@@ -35,6 +35,7 @@ class Countdown extends React.Component{
                         min:min-1,
                         sec:59
                     })
+                    console.log('update')
                 } else if(hour > 0){
                   this.setState({
                     hour:hour-1,
@@ -129,7 +130,7 @@ class Countdown extends React.Component{
                 })
             }else if(hour>0){
                 return this.setState({
-                    min:59,
+                    min:60,
                     hour:hour-1
                 })
             }
